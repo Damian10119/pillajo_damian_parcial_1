@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Generador de Fibonacci</h1>
+        
+        <div class="seccion-input">
+            <label>Cantidad de números:</label>
+            <input type="number" id="cantidad" min="1" max="50" placeholder="Ingresa un número (1-50)">
+            <p id="error"></p>
+        </div>
+
+        <button onclick="generarFibonacci()">Generar Secuencia</button>
+        <button onclick="limpiar()">Limpiar</button>
+
+        <div id="dashboard" class="dashboard">
+            <h2>Estadísticas</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <p class="stat-label">Total de números</p>
+                    <p class="stat-value" id="total">0</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Números pares</p>
+                    <p class="stat-value" id="pares">0</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Números impares</p>
+                    <p class="stat-value" id="impares">0</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Suma total</p>
+                    <p class="stat-value" id="suma">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-resultado">
+            <h2>Resultado:</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
